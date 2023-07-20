@@ -2,7 +2,7 @@ import './Botao.css'
 
 function Botao(props){
     return(
-        <button onClick={props.fecharModal} className="botao">Adicionar Tarefa</button>
+        <button className="botao">{props.children}</button>
     )
 }
 

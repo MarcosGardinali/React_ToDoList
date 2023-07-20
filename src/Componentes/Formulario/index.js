@@ -14,7 +14,7 @@ function Formulario(props){
             id: uuidv4(),
             nome,
     })
-    console.log(aoSalvar)
+    props.fecharModal()
     setNome('')
     }
 
@@ -27,7 +27,7 @@ function Formulario(props){
                     valor={nome}
                     aoAlterado={valor => setNome(valor)} 
                 />
-                <Botao fecharModal={props.fecharModal}/>
+                <Botao>Criar tarefa</Botao>
             </form>
         </section>
     )

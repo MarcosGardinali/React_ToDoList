@@ -27,10 +27,19 @@ function App() {
     setIsOpen(false);
   }
 
+  function deletarTarefa(id){
+    setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
+  }
+
   return (
     <div className="App">
       <Cabecalho abrirModal={abrirModal}/>
-      <Lista />
+      <Lista 
+        nome={tarefas.nome} 
+        id={tarefas.id} 
+        aoDeletar={deletarTarefa}
+        tarefas ={tarefas}  
+      />
       <div>
       <Modal
         isOpen={modalIsOpen}
