@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.lista{
+    margin: 3% 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    background-color: rgba(195, 237, 192, 0.35);
+    border-radius: 10px;
+    padding: 18px 64px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.lista h3{
+    text-align: center;
+    font-size: 24px;
+    color: #411530;
+}
