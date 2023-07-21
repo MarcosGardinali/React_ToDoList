@@ -22,6 +22,9 @@
 }
 
 .tarefas-container {
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
     max-height: 65vh; /* Ou defina uma altura máxima que desejar */
+    gap: 2rem;
 }
