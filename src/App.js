@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Cabecalho from "./Componentes/Cabecalho";
 import Lista from "./Componentes/Lista";
 import ModalTarefa from "./Componentes/ModalTarefa";
+import Rodape from './componentes/Rodape';
 import Modal from 'react-modal'
 import './App.css'
 
@@ -58,6 +59,7 @@ function App() {
         <ModalTarefa aTarefaAdicionada={tarefa => aNovaTarefaAdicionada(tarefa)} fecharModal={fecharModal}/>
       </Modal>
     </div>
+    <Rodape />
     </div>
   );
 }
