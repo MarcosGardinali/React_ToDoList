@@ -4,8 +4,9 @@
 
 .campo label{
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-size: 24px;
+    color: #bafff9;
 }
 
 .campo input{
