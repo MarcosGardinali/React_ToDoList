@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cabecalho from "./Componentes/Cabecalho";
 import Lista from "./Componentes/Lista";
 import ModalTarefa from "./Componentes/ModalTarefa";
@@ -13,6 +13,7 @@ function App() {
 
   function aNovaTarefaAdicionada(tarefa){
     setTarefas([...tarefas, tarefa])
+    localStorage.setItem("tarefas", JSON.stringify([...tarefas, tarefa]));
   }
 
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -29,7 +30,15 @@ function App() {
 
   function deletarTarefa(id){
     setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
+    localStorage.setItem("tarefas", JSON.stringify(tarefas.filter(tarefa => tarefa.id !== id)));
   }
+
+  useEffect(() => {
+    const tarefasSalvas = localStorage.getItem("tarefas");
+    if (tarefasSalvas) {
+      setTarefas(JSON.parse(tarefasSalvas));
+    }
+  }, []);
 
   return (
     <div className="App">
