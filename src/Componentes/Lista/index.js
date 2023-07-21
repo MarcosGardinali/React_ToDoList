@@ -13,7 +13,6 @@ function Lista(props){
                         key={tarefa.id} 
                         nome={tarefa.nome} 
                         aoDeletar={props.aoDeletar}
-                        aoChecar={props.aoChecar}
                         />
                     )
                 })}

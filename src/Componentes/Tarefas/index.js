@@ -1,20 +1,8 @@
 import { useState } from 'react';
 import './Tarefas.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
-import { ImCheckboxUnchecked } from 'react-icons/im'
-import { ImCheckboxChecked } from 'react-icons/im'
 
-
-    function Tarefas(props){
-
-      function checar(){
-        props.aoChecar(id)
-    }
-
-    const propsChecar ={
-        size: 25,
-        onClick: checar
-    }
+function Tarefas(props){
 
     // Variável de estado para acompanhar o status de conclusão da tarefa
   const [concluida, setConcluida] = useState(false);
@@ -29,10 +17,7 @@ import { ImCheckboxChecked } from 'react-icons/im'
        <section className='tarefas'>
         <div>
             <header className={concluida ? 'rodape_concluido' : 'rodape'}>
-                {favorito 
-                    ? <ImCheckboxUnchecked {... propsChecar} /> 
-                    : <ImCheckboxChecked {... propsChecar}
-                />}
+                <input type='checkbox' onChange={lidarComConclusao} />
                 <h4>{props.nome}</h4>
             </header>
             <AiFillCloseCircle 
