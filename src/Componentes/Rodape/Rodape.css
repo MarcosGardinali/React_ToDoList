@@ -1,5 +1,5 @@
 .rodapePrincipal{
-    background-image: url(/public/imagens/rodape.png);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
