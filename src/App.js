@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Cabecalho from "./Componentes/Cabecalho";
 import Lista from "./Componentes/Lista";
 import ModalTarefa from "./Componentes/ModalTarefa";
-import Rodape from './componentes/Rodape';
+import Rodape from './Componentes/Rodape';
 import Modal from 'react-modal'
 import './App.css'
 
