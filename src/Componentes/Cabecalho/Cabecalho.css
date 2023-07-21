@@ -5,11 +5,12 @@
     background-color: #411530;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
+    height: 5%;
 }
 
 .cabecalho h1{
     font-size: 32px;
-    color: #D1512D;
+    color: #f5fffb;
 }
 
 .cabecalho button{
@@ -17,7 +18,7 @@
     margin-top: 20px;
     height: 50%;
     padding: 8px;
-    background-color: #D1512D;
+    background-color: #f5fffb;
     color: #411530;
     border: none;
     border-radius: 32px;
