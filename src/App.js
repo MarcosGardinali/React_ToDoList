@@ -41,6 +41,14 @@ function App() {
     }
   }, []);
 
+  function resolverCheck(id){
+    setTarefas(tarefas.map(tarefa =>{
+      if(tarefa.id === id) tarefa.checar = !tarefa.checar 
+      return tarefa
+      
+    }))
+  }
+
   return (
     <div className="App">
       <Cabecalho abrirModal={abrirModal}/>
@@ -48,7 +56,8 @@ function App() {
         nome={tarefas.nome} 
         id={tarefas.id} 
         aoDeletar={deletarTarefa}
-        tarefas ={tarefas}  
+        tarefas ={tarefas} 
+        aoChecar={resolverCheck} 
       />
       <div>
       <Modal

@@ -12,6 +12,7 @@ function Formulario(props){
         evento.preventDefault()
         props.aTarefaAdicionada({
             id: uuidv4(),
+            checar: false,
             nome,
     })
     props.fecharModal()

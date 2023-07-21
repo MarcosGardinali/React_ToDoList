@@ -8,7 +8,7 @@ import { ImCheckboxChecked } from 'react-icons/im'
     function Tarefas(props){
 
       function checar(){
-        aoFavoritar(props.id)
+        props.aoChecar(id)
     }
 
     const propsChecar ={
