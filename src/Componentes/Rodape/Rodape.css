@@ -1,6 +1,6 @@
 .rodapePrincipal{
     background-color: transparent;
-    background-repeat: no-repeat;
+    margin-top: 5%;
     background-size: cover;
     display: flex;
     justify-content: space-around;
