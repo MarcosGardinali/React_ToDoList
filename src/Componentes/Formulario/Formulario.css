@@ -13,6 +13,7 @@
 
 .formulario form{
     background-color: rgba(60, 60, 60, 0.1);
+    border: 1px solid black;
     border-radius: 16px;
     padding: 16px 32px;
 }   
