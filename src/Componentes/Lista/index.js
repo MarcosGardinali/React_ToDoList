@@ -4,9 +4,9 @@ import './Lista.css'
 
 function Lista(props){
     return(
-        (props.tarefas.length > 0) ? <section className='lista'>
+        (props.tarefas.length > 0) ? <main className='lista'>
             <h3>Suas Tarefas</h3>
-            <div className="tarefas-container">
+            <section className="tarefas-container">
                 {props.tarefas.map( tarefa => {
                     return (<Tarefas
                         id={tarefa.id} 
@@ -16,8 +16,8 @@ function Lista(props){
                         />
                     )
                 })}
-            </div>    
-        </section>
+            </section>    
+        </main>
         : <NenhumaTarefa />
     )
 }
