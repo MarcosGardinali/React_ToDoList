@@ -13,6 +13,7 @@ function Formulario(props){
         props.aTarefaAdicionada({
             id: uuidv4(),
             nome,
+            check: false
     })
     props.fecharModal()
     setNome('')
