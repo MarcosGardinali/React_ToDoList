@@ -1,0 +1,8 @@
+.modal{
+    background-color: #3D3837;
+    border-radius: 20px;
+    padding: 10px 32px;
+    margin: 15px 80px;
+    flex: 1;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
