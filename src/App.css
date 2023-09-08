@@ -1,5 +1,11 @@
 .modalCaixa{
-    background-color: transparent;
-    margin: 60px 15%;
+    margin: 6% 35%;
     display: block;
+}
+
+/*Responsividade tablet*/
+@media screen and (max-width: 1023px) {
+    .modalCaixa{
+        margin: 35% 10%;
+    }
 }

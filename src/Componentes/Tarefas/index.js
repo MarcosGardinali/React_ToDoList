@@ -35,7 +35,7 @@ function Tarefas(props){
     return(
        <section className='tarefas'>
         <div>
-            <header className={concluida ? 'rodape_concluido' : 'rodape'}>
+            <header className={concluida ? 'cabecalho__tarefa__concluido' : 'cabecalho__tarefa'}>
                 <input type='checkbox' onChange={lidarComConclusao} checked={concluida} />
                 <h4>{props.nome}</h4>
             </header>

@@ -1,19 +1,29 @@
+@import url(/src/Styles/variaveis.css);
+
 .formulario{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2px 16px;
+    padding: 0.1rem 1rem;
+    background-color: var(--segunda_cor);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .formulario h2{
+    font-size: 1.5rem;
+    color: var(--quarta_cor);
     text-align: center;
-    font-size: 24px;
-    color: #bafff9;
 }
 
 .formulario form{
     background-color: rgba(60, 60, 60, 0.1);
-    border: 1px solid black;
-    border-radius: 16px;
-    padding: 16px 32px;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
 }   
+
+/*Reponsividade mobile*/
+@media only screen and (max-width: 767px) {
+  
+}

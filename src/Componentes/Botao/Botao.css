@@ -1,15 +1,19 @@
+@import url(/src/Styles/variaveis.css);
+
 .botao{
-    background-color: #f5fffb;
+    background-color: var(--terceira_cor);
     border-radius: 10px;
     font-weight: 700;
     font-size: 18px;
     padding: 32px;
     border: none;
     cursor: pointer;
-    color: #411530;
+    color: var(--quarta_cor);
     margin: 32px 0;
+    transition: 0.5s all;
 }
 
 .botao:hover{
-    color: #411538;
+    color: var(--terceira_cor);
+    background-color: var(--quarta_cor);
 }

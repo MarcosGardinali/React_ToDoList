@@ -1,16 +1,21 @@
+@import url(/src/Styles/variaveis.css);
+
 .rodapePrincipal{
+    box-sizing: border-box;
     background-color: transparent;
     margin-top: 5%;
     background-size: cover;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    position: absolute;
 }
 
 .rodapePrincipal p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #FFF;
+    color: var(--quarta_cor);
     font-weight: bold;
     font-size: 16px;
 }

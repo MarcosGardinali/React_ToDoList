@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import Cabecalho from "./Componentes/Cabecalho";
 import Lista from "./Componentes/Lista";
-import ModalTarefa from "./Componentes/ModalTarefa";
 import Rodape from './Componentes/Rodape';
 import Modal from 'react-modal'
 import './App.css'
+import Formulario from "./Componentes/Formulario";
 
 Modal.setAppElement('#root');
 
@@ -12,7 +12,7 @@ function App() {
 
   const [tarefas, setTarefas] = useState([])
 
-  function aNovaTarefaAdicionada(tarefa){
+  function aNovaTarefaAdicionada(tarefa) {
     setTarefas([...tarefas, tarefa])
     localStorage.setItem("tarefas", JSON.stringify([...tarefas, tarefa]));
   }
@@ -29,7 +29,7 @@ function App() {
     setIsOpen(false);
   }
 
-  function deletarTarefa(id){
+  function deletarTarefa(id) {
     setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
     localStorage.setItem("tarefas", JSON.stringify(tarefas.filter(tarefa => tarefa.id !== id)));
   }
@@ -43,23 +43,24 @@ function App() {
 
   return (
     <div className="App">
-      <Cabecalho abrirModal={abrirModal}/>
-      <Lista 
-        nome={tarefas.nome} 
-        id={tarefas.id} 
+      <Cabecalho abrirModal={abrirModal} />
+      <Lista
+        nome={tarefas.nome}
+        id={tarefas.id}
         aoDeletar={deletarTarefa}
-        tarefas ={tarefas}  
+        tarefas={tarefas}
       />
       <div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={fecharModal}
-        className="modalCaixa"
-      >
-        <ModalTarefa aTarefaAdicionada={tarefa => aNovaTarefaAdicionada(tarefa)} fecharModal={fecharModal}/>
-      </Modal>
-    </div>
-    <Rodape />
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={fecharModal}
+          className="modalCaixa"
+          style={{overlay: {backgroundColor: "transparent"}}}
+        >
+          <Formulario aTarefaAdicionada={tarefa => aNovaTarefaAdicionada(tarefa)} fecharModal={fecharModal} />
+        </Modal>
+      </div>
+      <Rodape />
     </div>
   );
 }

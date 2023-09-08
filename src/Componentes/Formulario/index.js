@@ -21,7 +21,7 @@ function Formulario(props){
 
     return(
         <section className='formulario'>
-            <h2>Preencha os campos para adicionar uma nova tarefa</h2>
+            <h2>Criar uma tarefa</h2>
             <form onSubmit={aoSalvar}>
                 <Campos
                     obrigatorio={true}
