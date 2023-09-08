@@ -1,0 +1,22 @@
+@import url(/src/Styles/variaveis.css);
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/imagens/bg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  font-family: var(--primeira_fonte);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

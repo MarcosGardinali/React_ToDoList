@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap');
+
+:root{
+    --primeira_cor: #2C3639;
+    --segunda_cor: #3F4E4F;
+    --terceira_cor: #A27B5C;
+    --quarta_cor: #DCD7C9;
+
+    --primeira_fonte: 'Montserrat', sans-serif;
+}

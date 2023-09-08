@@ -1,0 +1,46 @@
+@import url(/src/Styles/variaveis.css);
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primeira_cor);
+    width: 100%;
+}
+
+.cabecalho h1 {
+    display: flex;
+    gap: 1rem;
+    font-size: 28px;
+    color: var(--quarta_cor);
+    align-items: center;
+    margin: 1rem;
+}
+
+.cabecalho button {
+    display: flex;
+    font-size: 18px;
+    height: 50%;
+    padding: 8px;
+    background-color: var(--terceira_cor);
+    color: var(--quarta_cor);
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    margin: 1rem;
+    transition: 0.5s all;
+}
+
+.cabecalho button:hover{
+    background-color: var(--quarta_cor);
+    color: var(--terceira_cor);
+}
+
+
+/*Reponsividade mobile*/
+@media only screen and (max-width: 767px) {
+    .cabecalho button {
+        font-size: 1rem;
+        padding: 0.2rem;
+        align-items: center;
+    }
+}

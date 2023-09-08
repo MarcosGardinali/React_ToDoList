@@ -1,0 +1,38 @@
+@import url(/src/Styles/variaveis.css);
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.lista{
+    margin: 3% 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 18px 64px;
+    box-shadow: 8px 8px 16px rgba(245, 245, 245, 0.1);
+}
+
+.lista h3{
+    text-align: center;
+    font-size: 24px;
+    color: var(--quarta_cor);
+}
+
+.tarefas-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 55vh; /* Ou defina uma altura máxima que desejar */
+    gap: 2rem;
+}
+
+/*Responsividade tablet*/
+@media screen and (max-width: 1023px) {
+    .lista{
+        margin: 3% 10%;
+    }
+}
